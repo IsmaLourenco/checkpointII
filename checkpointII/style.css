@@ -1,6 +1,25 @@
+* {
+  text-align: center;
+}
+
+.campo {
+  display: inline-block;
+}
+
 input {
-  margin: 15px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
   width: auto;
   padding: 5px;
-  display: block;
+  display: flex;
+}
+
+.verifica-idade {
+  display: inline-flex;
+  margin: 15px;
+}
+
+.pontos {
+  display: inline-flex;
 }

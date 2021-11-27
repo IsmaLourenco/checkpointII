@@ -1,168 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
- 
-  <aside class="interesse">
-    <h2>Pontos de interesse</h2>
-     <input 
-         type="checkbox" 
-         name="interesse" 
-         value="Serra do Vulcão">
+  <body>
+    <article class="conteudo">
+      <header>
+        <h1 class="titulo">Preencha o formulário abaixo</h1>
+      </header>
 
-         <label 
-             for="serra"
-         >
-           Serra do Vulcão
-         </label>
+      <section class="registro">
+        <div>
+          <form action="/forms" method="post">
+            <label for="nome" class="campo"> Nome </label>
 
-         <input 
-         type="checkbox" 
-         name="interesse" 
-         value="Reserva de Tinguá">
+            <input
+              type="text"
+              name="nome"
+              tabindex="1"
+              placeholder="Digite seu nome completo"
+              required
+            />
 
-         <label 
-             for="reserva"
-         >
-           Reserva de Tinguá
-         </label>
+            <label for="email" class="campo"> E-mail </label>
 
-         <input 
-         type="checkbox" 
-         name="interesse" 
-         value="Parque Municipal">
+            <input
+              type="email"
+              name="email"
+              tabindex="2"
+              placeholder="Digite seu e-mail"
+              required
+            />
 
-         <label 
-             for="serra"
-         >
-           Parque Municipal
-         </label>
+            <label for="telefone" class="campo"> Telefone </label>
 
- </aside>
+            <input
+              type="text"
+              name="telefone"
+              tabindex="3"
+              placeholder="(00) 00000-0000"
+            />
 
- <fieldset>
-    <legend>Que tipo de visitante você é?</legend>
-    <div>
-       <select 
-        name="tipo">
-      
-        <option value="turista">Turista</option>
-        <option value="turista">Residente</option>
-        <option value="turista">Estudante</option>
-      </select> 
-    </div>
-  </fieldset>
+            <label for="dataNasc"> Data de nascimento </label>
 
-  <article class="conteudo">
-    <header>
-      <h1 class="titulo">Preencha o formulário abaixo</h1>
-    </header>
-      
-        <section class="registro">
-          <div>
-            <form
-                action="/forms" 
-                method="post"
-            >
-                <label 
-                    for="nome"
-                >
-                    Nome 
-                </label>        
+            <input type="date" name="dataNasc" tabindex="4" />
 
-                <input 
-                    type="text" 
-                    name="nome" 
-                    tabindex="1"
-                    placeholder="Digite seu nome completo"
-                    required
-                >
-          
-                <label 
-                    for="email"
-                >
-                  E-mail
-              </label>
+            <label for="idade"> Você é menor/maior de idade? </label>
+            <br />
+            <div class="verifica-idade">
+              <input
+                type="radio"
+                id="menor"
+                name="verifica"
+                value="Menor de idade"
+              />
 
-              <input 
-                    type="email" 
-                    name="email" 
-                    tabindex="2"
-                    placeholder="Digite seu e-mail"
-                    required
-              >
-              
-                <label 
-                    for="telefone"
-              >
-                  Telefone
-                </label>
-          
-                <input 
-                    type="text" 
-                    name="telefone" 
-                    tabindex="3" 
-                    placeholder="(00) 00000-0000"> 
-      
-                <label 
-                    for="dataNasc"
-                >
-                  Data de nascimento
-                </label>
+              <label for="menor"> Menor de idade </label>
 
-                <input 
-                    type="date" 
-                    name="dataNasc"
-                    tabindex="4">    
-      
-                <label 
-                    for="idade"
-                >
-                  Você é menor/maior de idade?
-                </label>
-                
-                <input 
-                    type="radio" 
-                    name="menor" 
-                    value="Menor de idade">
+              <input
+                type="radio"
+                id="maior"
+                name="verifica"
+                value="Maior de idade"
+              />
 
-                <label 
-                    for="menor"
-                >
-                  Menor de idade
-                </label>
+              <label for="maior"> Maior de idade </label>
+            </div>
 
-                <input 
-                    type="radio" 
-                    name="maior"
-                    value="Maior de idade">
+            <aside class="interesse">
+              <h2>Pontos de interesse</h2>
+              <div class="pontos">
+                <input
+                  type="checkbox"
+                  name="interesse"
+                  value="Serra do Vulcão"
+                />
 
-                <label 
-                    for="maior"
-                >
-                  Maior de idade
-                </label>
-                <p></p>
-                  <div>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Resetar</button>
-                  </div>      
+                <label for="serra"> Serra do Vulcão </label>
 
-            </form>
-          </div>
-        </section>
+                <input
+                  type="checkbox"
+                  name="interesse"
+                  value="Reserva de Tinguá"
+                />
 
-  </article>
+                <label for="reserva"> Reserva de Tinguá </label>
 
-  <footer>
+                <input
+                  type="checkbox"
+                  name="interesse"
+                  value="Parque Municipal"
+                />
 
-  </footer>
+                <label for="serra"> Parque Municipal </label>
+              </div>
+            </aside>
 
-</body>
+            <fieldset>
+              <legend>Que tipo de visitante você é?</legend>
+              <div>
+                <select name="tipo">
+                  <option value="turista">Turista</option>
+                  <option value="turista">Residente</option>
+                  <option value="turista">Estudante</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <div>
+              <button type="submit">Enviar</button>
+              <button type="reset">Resetar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </article>
+
+    <footer></footer>
+  </body>
 </html>
