@@ -1,22 +1,23 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
 }
 
-.fieldset {
-  display: inline-block;
-  padding-left: 50px;
-  padding-right: 50px;
+ html,body{
+  
+  background: #E0E0E0;
+  background-repeat: no-repeat;
+ }
+ ul {
+	list-style: none;
 }
 
-input {
-  text-align: center;
-  margin: auto;
-  margin-bottom: 15px;
-  width: auto;
-  padding: 5px;
+a {
+	text-decoration: none;
 }
 
 nav {
@@ -24,16 +25,133 @@ nav {
   top: 0;
   width: 100%;
   background-color: #fec63e;
-  padding: 15px 0;
+  padding: 20px 0;
   z-index: 10;
 }
 
+.menu-nav ul {
+  display: flex;
+	 margin-left: 75%;
+}
+
+.menu-nav a {
+	font-size: 1.25em;
+	display: block;
+	padding: 10px;
+  text-align: left;
+  color: #84E;
+}
+.menu-nav a:hover{
+	color: #E0E0E0;
+}
+select {
+  width: 50%;
+  height: 25px;
+  padding: 10px 5px;
+   margin: auto;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  color: #333333;
+  background: #E8EBED;
+ border: 2px solid #84E;;
+ border-radius: 4px;
+ 
+}
+
+select option {
+  color: #333333;
+}
+.fieldset {
+  display: inline-block;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #333333;
+}
+
+legend{
+  font-size: 30px;
+  color: #84E;
+}
+
+form{
+  margin: 60px;
+  
+}
+
+input {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 50%;
+  height: 25px;
+  padding: 10px 5px;
+  outline: none;
+  background: #E8EBED;
+ border: 2px solid #84E;;
+ border-radius: 4px;
+ 
+}
+
+
 h2 {
+  
   text-align: center;
   padding: 20px;
+  color: #333333;
+}
+
+h1{
+ font-size: 25px;
+ padding: 5px;
+ color: #333333;
+}
+aside {
+ padding: 10px;
+  display: flex;
+  
+}
+ label{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+input{
+  text-align: center;
+  display:block;
+  
+}
+
+input .checkbox{
+  margin-left: 20px;
 }
 
 .botao {
   margin-top: 15px;
   font-size: 26px;
+  padding: 10px;
+}
+
+button {
+height: 30px;
+width: 150px;
+left: 576px;
+cursor: pointer;
+border-radius: 24px 4px;
+background: #fec63e;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.botao button:hover {
+  background-color: #84E;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
