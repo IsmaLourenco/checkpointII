@@ -1,23 +1,22 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
- html,body{
-  
-  background: #E0E0E0;
+html,
+body {
+  background: #e0e0e0;
   background-repeat: no-repeat;
- }
- ul {
-	list-style: none;
+}
+ul {
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 nav {
@@ -31,34 +30,33 @@ nav {
 
 .menu-nav ul {
   display: flex;
-	 margin-left: 75%;
+  margin-left: 75%;
 }
 
 .menu-nav a {
-	font-size: 1.25em;
-	display: block;
-	padding: 10px;
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
   text-align: left;
-  color: #84E;
+  color: #84e;
 }
-.menu-nav a:hover{
-	color: #E0E0E0;
+.menu-nav a:hover {
+  color: #e0e0e0;
 }
 select {
   width: 50%;
   height: 25px;
   padding: 10px 5px;
-   margin: auto;
+  margin: auto;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   outline: none;
   color: #333333;
-  background: #E8EBED;
- border: 2px solid #84E;;
- border-radius: 4px;
- 
+  background: #e8ebed;
+  border: 2px solid #84e;
+  border-radius: 4px;
 }
 
 select option {
@@ -73,14 +71,13 @@ select option {
   color: #333333;
 }
 
-legend{
+legend {
   font-size: 30px;
-  color: #84E;
+  color: #84e;
 }
 
-form{
+form {
   margin: 60px;
-  
 }
 
 input {
@@ -91,44 +88,39 @@ input {
   height: 25px;
   padding: 10px 5px;
   outline: none;
-  background: #E8EBED;
- border: 2px solid #84E;;
- border-radius: 4px;
- 
+  background: #e8ebed;
+  border: 2px solid #84e;
+  border-radius: 4px;
 }
 
-
 h2 {
-  
   text-align: center;
   padding: 20px;
   color: #333333;
 }
 
-h1{
- font-size: 25px;
- padding: 5px;
- color: #333333;
+h1 {
+  font-size: 25px;
+  padding: 5px;
+  color: #333333;
 }
 aside {
- padding: 10px;
+  padding: 10px;
   display: flex;
-  
 }
- label{
+label {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   padding: 10px;
 }
 
-input{
+input {
   text-align: center;
-  display:block;
-  
+  display: block;
 }
 
-input .checkbox{
+input .checkbox {
   margin-left: 20px;
 }
 
@@ -139,19 +131,19 @@ input .checkbox{
 }
 
 button {
-height: 30px;
-width: 150px;
-left: 576px;
-cursor: pointer;
-border-radius: 24px 4px;
-background: #fec63e;
-text-align: center;
-text-transform: uppercase;
-font-weight: bold;
+  height: 30px;
+  width: 150px;
+  left: 576px;
+  cursor: pointer;
+  border-radius: 24px 4px;
+  background: #fec63e;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .botao button:hover {
-  background-color: #84E;
+  background-color: #84e;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
