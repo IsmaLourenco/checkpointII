@@ -11,6 +11,7 @@ body {
   background: #e0e0e0;
   background-repeat: no-repeat;
 }
+
 ul {
   list-style: none;
 }
@@ -40,9 +41,11 @@ nav {
   text-align: left;
   color: #84e;
 }
+
 .menu-nav a:hover {
   color: #e0e0e0;
 }
+
 select {
   width: 50%;
   height: 25px;
@@ -62,6 +65,7 @@ select {
 select option {
   color: #333333;
 }
+
 .fieldset {
   display: inline-block;
   padding-left: 60px;
@@ -104,10 +108,13 @@ h1 {
   padding: 5px;
   color: #333333;
 }
+
 aside {
   padding: 10px;
   display: flex;
+  text-align: center;
 }
+
 label {
   font-size: 16px;
   font-weight: bold;
@@ -122,6 +129,25 @@ input {
 
 input .checkbox {
   margin-left: 20px;
+}
+
+.tema {
+  font-size: 25px;
+}
+
+.idade {
+  margin: 10px;
+  display: flex;
+}
+
+.opcao {
+  font-size: 20px;
+  display: flex;
+  row-gap: 12px;
+}
+
+.check {
+  display: inline-flex;
 }
 
 .botao {
