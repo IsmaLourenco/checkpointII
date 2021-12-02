@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+
+</head>
+<link rel="stylesheet" type="text/css" href="city.css" />
+
+<body>
+
+  <div>
+    <aside>
+      <h2>Pontos de interesse</h2>
+
+      <div class="serra">
+        <input type="checkbox" name="interesse" value="Serra do Vulcão" id="serra">
+
+        <label for="serra">Serra do Vulcão</label>
+      </div>
+
+      <div class="reserva">
+        <input type="checkbox" name="interesse" value="Reserva de Tinguá" id="reserva">
+
+        <label for="reserva">Reserva de Tinguá</label>
+      </div>
+
+      <div class="parque">
+        <input type="checkbox" name="interesse" value="parque" id="parque">
+
+        <label for="parque">Parque Municipal</label>
+      </div>
+    </aside>
+
+  </div>
+
+  <div class="visitante">
+    <fieldset>
+      <legend>Que tipo de visitante você é?</legend>
+
+      <div>
+        <select name="tipo">
+          <option value="turista">Turista</option>
+          <option value="turista">Residente</option>
+          <option value="turista">Estudante</option>
+        </select>
+      </div>
+    </fieldset>
+  </div>
+
+  <article class="conteudo">
+    <header>
+      <h1 class="titulo">Preencha o formulário abaixo</h1>
+    </header>
+
+    <section class="registro">
+      <div>
+        <form action="/forms" method="post">
+
+          <div>
+            <label for="nome">Nome</label>
+          </div>
+          <input type="text" name="nome" tabindex="1" placeholder="Digite seu nome completo" maxlength="100" required>
+
+
+          <div>
+            <label for="email">E-mail</label>
+          </div>
+          <input type="email" name="email" tabindex="2" placeholder="Digite seu e-mail" required>
+
+          <div>
+            <label for="telefone">Telefone</label>
+
+          </div>
+          <input type="text" name="telefone" tabindex="3" placeholder="(00) 00000-0000">
+
+
+          <div>
+            <label for="dataNasc">Data de nascimento</label>
+          </div>
+          <input type="date" name="dataNasc" tabindex="4">
+
+          <div>
+            <label for="idade">Você é menor/maior de idade?</label>
+          </div>
+
+          <div>
+            <label for="menor">Menor de idade</label>
+
+          </div>
+          <input type="radio" name="menor" value="Menor de idade">
+
+          <div>
+            <label for="maior">Maior de idade</label>
+          </div>
+          <input type="radio" name="maior" value="Maior de idade">
+
+
+          <p></p>
+          <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+  </article>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

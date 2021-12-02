@@ -1,0 +1,36 @@
+aside {
+  margin: 15px;
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  border: solid 1px;
+  display: block;
+  align-items: center;
+  }
+  
+  .reserva{
+    height: 25px;
+  }
+
+  .serra{
+    height: 25px;
+  }
+
+  h2 {
+    width: 250px;
+  }
+.visitante {
+  width: 230px;
+  height: 50px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.conteudo {
+  margin-left: 300px;
+  width: 400px;
+  }
+
+.registro {
+  display: block;
+}
